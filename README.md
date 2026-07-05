@@ -20,6 +20,8 @@ The logic follows a classic triangular strategy:
 * **Persistent Score Tracking:** Keeps a live record of your Wins, Losses, and Ties using structured JavaScript objects and custom methods.
 * **Clean & Dynamic UI:** Rounded image action buttons providing an intuitive gameplay experience.
 * <img width="1919" height="868" alt="image" src="https://github.com/user-attachments/assets/1dc2aed9-69a7-4728-a740-47d0e03d0595" />
+* <img width="1919" height="868" alt="image" src="https://github.com/user-attachments/assets/eae6e96d-9c50-4fa2-be40-57a0fe3d30af" />
+
 
 
 
