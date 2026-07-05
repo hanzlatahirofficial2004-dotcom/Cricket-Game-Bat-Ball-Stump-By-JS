@@ -19,6 +19,8 @@ The logic follows a classic triangular strategy:
 * **Smart JavaScript Logic:** Utilizes pseudo-random number generation (`Math.random()`) to simulate an unpredictable computer opponent.
 * **Persistent Score Tracking:** Keeps a live record of your Wins, Losses, and Ties using structured JavaScript objects and custom methods.
 * **Clean & Dynamic UI:** Rounded image action buttons providing an intuitive gameplay experience.
+* <img width="1919" height="868" alt="image" src="https://github.com/user-attachments/assets/215c3f57-101e-4073-95bb-0789af5f5cc8" />
+
 
 ---
 
