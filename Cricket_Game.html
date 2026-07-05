@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanzi's Created-Cricket-Game</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .button{
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            border: none;
+            background-color: aquamarine;
+            border-radius: 100px;
+
+        }
+
+        .Choose-image{
+            width: 85px;
+            height: 95px;
+            border-radius: 100px;
+            background-color: aquamarine;
+
+        }
+
+        .result-div {
+            font-size: 20px;
+            margin: 10px 0;
+            font-family: sans-serif;
+            font-weight: bold;}
+    </style>
+</head>
+<body>
+    <h1>
+        Bat Ball Stump Game
+    </h1>
+
+    
+    
+    
+    
+    <button class="button"
+    onclick="
+     User_Choise = 'You Choose The Bat';
+    console.log(User_Choise);
+
+    let Computer_Choise = Computer_Choise_And_Random_Number();
+    
+    console.log('Computer Choose The '+Computer_Choise);
+
+    if( Computer_Choise === 'Bat' )
+    {
+        Result='This Match Will Be Tie';
+         console.log( Result);
+         score.tie++;
+    }
+    else if( Computer_Choise === 'Ball' )
+    {
+        Result='This Match Win By User';
+         console.log( Result);
+         score.win++;
+
+    }
+    else
+    {
+        Result='This Match Win By Computer';
+         console.log( Result);
+         score.lost++;
+    }
+    console.log(score);
+    document.getElementById('User-Choosen').innerText=User_Choise;
+    document.getElementById('Computer-Choosen').innerText='Computer Choose The '+Computer_Choise;
+    document.getElementById('Final-Result').innerText=Result;
+    document.getElementById('Final-Score').innerText=score.Display_Score();
+    
+    // alert(`${User_Choise} \n computer choose The : ${Computer_Choise} \n ${Result} \n ${score.Display_Score()}`);
+    
+    "><img src="images/2.jpg" alt="Bat-Image" class="Choose-image"></button>
+
+
+    <button class="button"
+    onclick="
+    var User_Choise = 'You Choose The Ball';
+    console.log(User_Choise);
+    Computer_Choise = Computer_Choise_And_Random_Number();
+
+    if( Computer_Choise === 'Bat' )
+    {
+        Result='This Match Will By Computer';
+         console.log( Result);
+         score.lost++;
+    }
+    else if( Computer_Choise === 'Ball' )
+    {
+        Result='This Match Win Be Tie';
+         console.log( Result);
+         score.tie++;
+    }
+    else
+    {
+        Result='This Match Win By User';
+         console.log( Result);
+         score.win++;
+    }
+    console.log(score);
+    document.getElementById('User-Choosen').innerText=User_Choise;
+    document.getElementById('Computer-Choosen').innerText='Computer Choose The '+Computer_Choise;
+    document.getElementById('Final-Result').innerText=Result;
+    document.getElementById('Final-Score').innerText=score.Display_Score();
+    // alert(`${User_Choise} \n computer choose The : ${Computer_Choise} \n ${Result} \n ${score.Display_Score()}`);
+    
+    "><img src="images/1.jpg" alt="Ball-Image" class="Choose-image"></button>
+
+    <button class="button"
+    onclick="
+    var User_Choise = 'You Choose The Stump';
+    console.log(User_Choise);
+    
+    Computer_Choise = Computer_Choise_And_Random_Number();
+    console.log('Computer Choose The '+Computer_Choise);
+
+    if( Computer_Choise === 'Bat' )
+    {
+        Result='This Match Will By User';
+         console.log( Result);
+         score.win++;
+    }
+    else if( Computer_Choise === 'Ball' )
+    {
+        Result='This Match Win By Computer';
+         console.log( Result);
+         score.lost++;
+    }
+    else
+    {
+        Result='This Match Will Be Tie';
+         console.log( Result);
+         score.tie++;
+
+    }
+    console.log(score);
+    document.getElementById('User-Choosen').innerText=User_Choise;
+    document.getElementById('Computer-Choosen').innerText='Computer Choose The '+Computer_Choise;
+    document.getElementById('Final-Result').innerText=Result;
+    document.getElementById('Final-Score').innerText=score.Display_Score();
+    // alert(`${User_Choise} \n computer choose The : ${Computer_Choise} \n ${Result} \n ${score.Display_Score()}`);
+    
+    "><img src="images/3.jpg" alt="Stump" class="Choose-image"></button>
+
+    <h3><div id="User-Choosen" class="result-div"></div></h3>
+    <h3><div id="Computer-Choosen" class="result-div"></div></h3>
+    <h3><div id="Final-Result" class="result-div"></div></h3>
+    <h3><div id="Final-Score" class="result-div"></div></h3>
+
+    <script>
+
+        var score = {
+            win : 0,
+            lost :0,
+            tie :0,
+        Display_Score : function()
+        {
+           return `Win : ${score.win} , Lost : ${score.lost} , Tie : ${score.tie}`
+        }
+         }
+    //  var Computer_Choise;
+     function Computer_Choise_And_Random_Number()
+      {
+    var Result;
+    Computer_Choise = Math.random()*3;
+    // console.log(Computer_Choise);
+    if(Computer_Choise > 0 && Computer_Choise <=1  )
+    {
+        return 'Bat';
+        
+    }
+    else if(Computer_Choise > 1 && Computer_Choise <=2  )
+    {
+        return 'Ball';
+        
+    }
+    else{
+        return  'Stump';
+        
+    }
+    return Computer_Choise;
+      }
+    </script>
+    
+</body>
+</html>
