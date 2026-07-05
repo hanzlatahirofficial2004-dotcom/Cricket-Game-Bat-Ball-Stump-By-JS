@@ -9,6 +9,8 @@ The logic follows a classic triangular strategy:
 * **Bat beats Ball** (Bat swings and hits the ball!)
 * **Ball beats Stump** (Ball hits the stumps and gets a wicket!)
 * **Stump beats Bat** (Stumps catch the batsman out via run-out/stumping!)
+* <img width="1919" height="868" alt="image" src="https://github.com/user-attachments/assets/00f2006e-355b-485f-aafa-04a091ea9bee" />
+
 
 ---
 
